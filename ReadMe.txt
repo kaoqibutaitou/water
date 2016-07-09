@@ -6,7 +6,6 @@
 
 联系方式
 	kaoqibutaitou@foxmail.com
-	18810578752
 
 作者(版权所有)
-	08211101 1120112077 李秋云 
+	kaoqibutaitou
