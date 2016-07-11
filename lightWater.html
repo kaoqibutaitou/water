@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淡水</title>
+
+	
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+  	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  	<link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" href="css/lightWater.css">
+
+  	<script>
+	  $(document).ready(function(){
+	      $(".main").onepage_scroll({
+	        sectionContainer: "section",
+	        responsiveFallback: 30,
+	        loop: false,
+	        animationTime: 1000
+	      });
+
+        $(".main section.page2 .page_container .words").hover(
+            function(event){
+               $(".main section.page2 .page_container .left").animate({"background-position-x":"0%"},300);
+               $(".main section.page2 .page_container .right").animate({"background-position-x":"100%"},300);
+            },
+            function(event){
+               $(".main section.page2 .page_container .left").animate({"background-position-x":"100%"},300);
+               $(".main section.page2 .page_container .right").animate({"background-position-x":"0%"},300);
+            }
+        );
+		});
+		
+	</script>
+  <script type="text/javascript" src="js/checkBrowser.js"></script>
+</head>
+<body>
+	<div class="header banner">
+      <ul>
+        <a href="index.html">
+          <li>首页</li>
+        </a>
+        <a href="goodWater.html">
+          <li>好水</li>
+        </a>
+        <a href="pureWater.html">
+          <li>纯水</li>
+        </a>
+        <a href="liveWater.html">
+          <li>活水</li>
+        </a>
+        <a href="lightWater.html" class="active">
+          <li>淡水</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="footer banner">
+      Copyright © 2014 Water Powered By 
+      <a href="mailto:kaoqibutaitou@foxmail.com">
+        Chiuyun Lee 
+      </a>
+        -- <a href="ReadMe.txt" target="_BLANK">ReadMe</a>
+    </div>
+
+	<div class="wrapper">
+	  <div class="main">
+	  	<section class="page1">
+	        <div class="page_container">
+	        	<div class="words">
+              <h1>淡水·地球</h1>
+              <p>
+                淡水主要由江河及湖泊中的水、高山积雪、冰川以及地下水等组成。
+              </p> 
+              <p>
+                地球上的水，总体积为14.1亿立方公里，其中只有2%是淡水。淡水的87%又被封冻在两极及高山的冰层和冰川中，难以利用。便于人类利用的淡水资源只有21000立方公里左右。
+              </p>
+              <h1>淡水·海难</h1>
+              <p>
+                在很多的海难事件中，很多是因为海面上没有淡水，导致了人们不得不想法设法的活下去。
+              </p>
+              <p>
+                没有淡水，人们在海上就很难生存下去。
+              </p>
+            </div>
+            <img src="image/boat.png" alt="">
+	  	    </div>
+	     </section>
+
+	     <section class="page2">
+	        <div class="page_container">
+	        	<div class="left"></div>
+            <div class="words">
+              <div class="selectItem">
+                <ul>
+                  <li>君子之交</li>
+                  <li>小人之交</li>
+                </ul>
+              </div>
+            </div>
+            <div class="right"></div>
+	  	    </div>
+	     </section>
+	  </div>
+	</div>
+</body>
+</html>
